@@ -31,6 +31,50 @@ To create a robust system that classifies emotions in Hindi speech using machine
 
 ---
 
+## Preprocessing Steps
+1. **Data Collection and Preparation**:
+   - Hindi speech data was collected and labeled with corresponding emotions.
+   - Used a combination of real and synthetic datasets to augment the data.
+
+2. **Feature Extraction**:
+   - Extracted Mel Frequency Cepstral Coefficients (MFCCs) from the audio data as features for emotion classification.
+
+3. **Data Augmentation**:
+   - To address the imbalance in the dataset, techniques like pitch shifting, time-stretching, and noise addition were used.
+
+4. **Resampling and Standardization**:
+   - Resampled all audio files to a consistent sample rate to ensure uniformity.
+   - Standardized audio signals to have similar amplitude ranges.
+
+5. **Splitting Data**:
+   - Divided the dataset into training, validation, and testing sets to evaluate model performance effectively.
+
+
+## Challenges
+
+1. **Limited Availability of Hindi Speech Data**
+   - Created a synthetic dataset to augment real data.
+
+2. **Language Barrier**:
+   - Pre-trained models for speech emotion recognition are typically trained on English datasets.
+   - Translation to Hindi was not feasible due to the loss of emotional context, so pre-trained models were excluded.
+
+3. **Audio Input Management**:
+   - Issues arose due to sample rate inconsistencies and imbalances in recordings.
+   - Variations in wavelength and frequency of audio signals made preprocessing and standardization challenging.
+
+4. **Streamlit App Implementation**:
+   - While implementing the Streamlit app, the live recording function had issues related to recording directly into a temporary file.
+   - These challenges require further debugging and optimization.
+
+5. **Noise in Speech Samples**
+   - Preprocessed audio to remove background noise.
+
+6. **Feature Extraction**
+   - Balancing computation cost and information retention while extracting MFCCs.
+
+---
+
 ## Directory Structure
 
 ```
@@ -98,15 +142,8 @@ Models were evaluated using the following metrics:
 - **Recall**
 - **F1-Score**
 
-### Challenges
-1. **Limited Availability of Hindi Speech Data**
-   - Created a synthetic dataset to augment real data.
-2. **Noise in Speech Samples**
-   - Preprocessed audio to remove background noise.
-3. **Feature Extraction**
-   - Balancing computation cost and information retention while extracting MFCCs.
-
 ---
+
 
 ## Streamlit Application
 The Streamlit app allows users to:
