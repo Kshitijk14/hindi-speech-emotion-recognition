@@ -23,3 +23,6 @@ soundfile
 SpeechRecognition
 jupyter
 nbconvert
+streamlit
+sounddevice
+wavio
