@@ -19,18 +19,20 @@ list_of_files = [
     # f"src/{project_name}/entity/__init__.py",
     # f"src/{project_name}/entity/config_entity.py",
     # f"src/{project_name}/constants/__init__.py",
-    "config/config.yaml",
-    "dvc.yaml",
-    "params.yaml",
-    "requirements.txt",
+    # "dvc.yaml",
+    # "params.yaml",
     # "setup.py",
+    # "templates/index.html",
+    # "utils.py",
+    
+    "config/config.py",
+    "requirements.txt",
     "notebooks/speech_emotion_recognition.ipynb",
+    'scripts/.gitkeep',
     "pipelines/pipeline.py",
-    "templates/index.html",
     "main.py",
     "app.py",
-    "utils.py",
-    "artifacts/model/.gitkeep",
+    "models/.gitkeep",
     "artifacts/dataset/.gitkeep"
 ]
 
